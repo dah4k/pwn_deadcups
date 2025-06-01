@@ -29,6 +29,6 @@ jobs:
 
     - name: Build and Publish the Docker image
       run: |
-        docker build . --file Dockerfile.pwn_deadcups --tag ghcr.io/dah4k/pwn_deadcups:latest --tag ghcr.io/dah4k/pwn_deadcups:$(date +%Y%m%d)
+        docker build . --file Dockerfile --tag ghcr.io/dah4k/pwn_deadcups:latest --tag ghcr.io/dah4k/pwn_deadcups:$(date +%Y%m%d)
         docker push ghcr.io/dah4k/pwn_deadcups:$(date +%Y%m%d)
         docker push ghcr.io/dah4k/pwn_deadcups:latest
