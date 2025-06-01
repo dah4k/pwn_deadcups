@@ -1,0 +1,19 @@
+# Copyright 2025 dah4k
+# SPDX-License-Identifier: EPL-2.0
+
+version = 1
+SPDX-PackageName = "pwn_deadcups"
+SPDX-PackageSupplier = "dah4k <84741290+dah4k@users.noreply.github.com>"
+SPDX-PackageDownloadLocation = "https://github.com/dah4k/pwn_deadcups/"
+
+[[annotations]]
+path = [
+    "init.d/avahi-daemon",
+    "systemd/system/avahi-daemon.service",
+    "systemd/system/avahi-daemon.socket"
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = [
+    "Copyright 2004-2022 by the Avahi developers"
+]
+SPDX-License-Identifier = "LGPL-2.1-or-later"
