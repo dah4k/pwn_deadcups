@@ -20,7 +20,11 @@ all: $(TAG) ## Build container image
 
 .PHONY: test
 test: $(TAG) ## Test run container image
-	$(DOCKER) run --interactive --tty --rm --publish 1631:631/udp --publish 1631:631/tcp --name=$(TAG) $(TAG)
+	$(DOCKER) run --rm --publish 1631:631/udp --publish 1631:631/tcp --name=$(TAG) $(TAG)
+
+.PHONY: debug
+debug: $(TAG) ## Debug container image
+	$(DOCKER) run --interactive --tty --rm --entrypoint=/bin/bash $(TAG)
 
 .PHONY: clean
 clean: ## Remove container image
