@@ -17,3 +17,20 @@ SPDX-FileCopyrightText = [
     "Copyright 2004-2022 by the Avahi developers"
 ]
 SPDX-License-Identifier = "LGPL-2.1-or-later"
+
+[[annotations]]
+path = [
+    "init.d/cups",
+    "init.d/cups-browsed",
+    "systemd/system/cups-browsed.service",
+    "systemd/system/cups.path",
+    "systemd/system/cups.service",
+    "systemd/system/cups.socket"
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = [
+    "Copyright © 2020-2025 by OpenPrinting",
+    "Copyright © 2007-2020 by Apple Inc.",
+    "Copyright © 1997-2007 by Easy Software Products"
+]
+SPDX-License-Identifier = "Apache-2.0 WITH LLVM-exception"
